@@ -63,7 +63,7 @@ def EvaluateRules(req: func.HttpRequest) -> func.HttpResponse:
 openai.api_key = os.environ.get("OPENAI_API_KEY", "YOUR_AZURE_OPENAI_API_KEY_FOR_LOCAL_TESTING_ONLY")
 openai.api_base = os.environ.get("OPENAI_API_BASE", "YOUR_AZURE_OPENAI_ENDPOINT_FOR_LOCAL_TESTING_ONLY")
 openai.api_type = "azure"
-openai.api_version = "2023-05-15" # Or your deployed API version
+openai.api_version = "2025-01-01-preview" # Or your deployed API version
 
 AZURE_OPENAI_MODEL_NAME = os.environ.get("AZURE_OPENAI_MODEL_NAME", "YOUR_DEPLOYMENT_NAME_FOR_LOCAL_TESTING_ONLY")
 
